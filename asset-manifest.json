@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fetch-github-user/static/css/main.c0ed90b3.css",
+    "main.js": "/fetch-github-user/static/js/main.81ae6f14.js",
+    "index.html": "/fetch-github-user/index.html",
+    "main.c0ed90b3.css.map": "/fetch-github-user/static/css/main.c0ed90b3.css.map",
+    "main.81ae6f14.js.map": "/fetch-github-user/static/js/main.81ae6f14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0ed90b3.css",
+    "static/js/main.81ae6f14.js"
+  ]
+}
