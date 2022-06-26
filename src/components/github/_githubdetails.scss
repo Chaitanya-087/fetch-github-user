@@ -1,0 +1,151 @@
+@import '../../breakpoints';
+
+.github {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #1F2A48;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.278);
+    padding: 24px;
+
+    .top {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+
+            .avatar {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
+        }
+
+        .right {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            width: 80%;
+            @include breakpoint(48em){
+                flex-direction: column;
+            }
+
+            .userPersonal {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0.75rem;
+
+                .name {
+                    font-size: medium;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    color: #fff;
+                }
+
+                .login {
+                    color: #0179ff;
+                    margin-bottom: 1rem;
+                    font-weight: bold;
+                }
+
+            }
+
+            .joined {
+                color: rgba(245, 245, 245, 0.7);
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .middle {
+        width: 80%;
+        margin-left: auto;
+
+        @include breakpoint(48em){
+            width: 100%;
+        }
+
+        .bio {
+            color: white;
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+
+        .items {
+            padding: 20px;
+            background-color: rgba(0 0 0 / 0.3);
+            display: flex;
+            border-radius: 8px;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+
+            .item {
+                p {
+                    color: rgba(245, 245, 245, 0.7);
+                }
+
+                h3 {
+                    color: #fff;
+                }
+            }
+        }
+
+        .whereabouts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 1rem;
+            @include breakpoint(48em){
+                grid-template-columns: 1fr;
+            }
+            .location,
+            .twitter,
+            .link,
+            .company {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: rgba(245, 245, 245, 0.7);
+                p{
+                    font-weight: bold;
+                }
+                a{
+                    font-weight: bold;
+                }
+            }
+
+            .icon {
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+}
+
+//switch
+.github[data-light="true"] {
+    background-color: #fff;
+    color: black;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    span,
+    p,a,
+    .icon {
+        color: #000 !important;
+    }
+
+}
